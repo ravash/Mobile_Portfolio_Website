@@ -7,8 +7,14 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <title>
         </title>
+        
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-        <link rel="stylesheet" href="my.css" />
+        <link rel="stylesheet" href="css/ravash.css" />
+        <!--<link rel="stylesheet" href="my.css" />-->
+        
+        <link href='http://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
+        
+        
         <script src="http://code.jquery.com/jquery-1.7.2.min.js">
         </script>
         <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js">
@@ -36,25 +42,25 @@
         <div data-role="page" id="page1">
             <div data-theme="a" data-role="header">
                 <h3>
-                    Header
+                    Ravash Inc.
                 </h3>
             </div>
             <div data-role="content">
                 <div data-role="navbar" data-iconpos="top">
                     <ul>
                         <li>
-                            <a href="#page2" data-transition="fade" data-theme="" data-icon="">
-                                Button
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                                Home
                             </a>
                         </li>
                         <li>
-                            <a href="#page2" data-transition="fade" data-theme="" data-icon="">
-                                Button
+                            <a href="#page2" data-transition="fade" data-theme="a" data-icon="">
+                                About Me
                             </a>
                         </li>
                         <li>
-                            <a href="#page2" data-transition="fade" data-theme="" data-icon="">
-                                Button
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                                Contact Me
                             </a>
                         </li>
                     </ul>
@@ -62,28 +68,30 @@
                 <div data-role="navbar" data-iconpos="top">
                     <ul>
                         <li>
-                            <a href="#page2" data-transition="fade" data-theme="" data-icon="">
-                                Button
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                                Projects
                             </a>
                         </li>
                         <li>
-                            <a href="#page2" data-transition="fade" data-theme="" data-icon="">
-                                Button
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                                Services
                             </a>
                         </li>
                     </ul>
                 </div>
+                <div>
+                	<h1>This is just a test</h1>
+                </div>
             </div>
             <div id="Copyright" data-theme="a" data-role="footer" data-position="fixed">
                 <h3>
-                    Footer
+                    &copy;2013 Ravash Inc. All rights reserved.
                 </h3>
             </div>
-            <div id="fullsite" data-theme="a" data-role="footer" data-position="fixed">
-                <h3>
-                    Footer
-                </h3>
+            <div id"sitelink">
+            	<a href"mweb/index.html">Full Site</a>
             </div>
+
         </div>
         <div data-role="page" id="page2">
             <div data-theme="a" data-role="header">
@@ -92,12 +100,39 @@
                 </h3>
             </div>
             <div data-role="content">
-                <a data-role="button" href="#page1">
-                    Button
-                </a>
-                <a data-role="button" href="#page1">
-                    Button
-                </a>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page2" data-transition="fade" data-theme="a" data-icon="">
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                                Services
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <div>
                     <a href="" data-transition="fade">
                         Link me to click me
@@ -114,7 +149,7 @@
             </div>
             <div data-theme="a" data-role="footer" data-position="fixed">
                 <h3>
-                    Footer
+                    &copy;2013 Ravash Inc. All rights reserved.
                 </h3>
             </div>
         </div>
