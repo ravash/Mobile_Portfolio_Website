@@ -11,9 +11,6 @@
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
         <link rel="stylesheet" href="css/ravash.css" />
         <link rel="stylesheet" href="css/customs.css" />
-        <!--<link rel="stylesheet" href="my.css" />-->
-        
-        <link href='http://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
         
         
         <script src="http://code.jquery.com/jquery-1.7.2.min.js">
@@ -39,42 +36,45 @@
         </script>
     </head>
     <body>
-        <!-- Home -->
-        <div data-role="page" id="page1">
+        <!-- Home Page!-->
+        <div data-role="page" id="home">
             <div data-theme="a" data-role="header">
+            	<a data-roll="button" data-rel="back" data-theme="a">
+            		Back
+            	</a>
                 <h3>
                     Ravash Inc!
                 </h3>
             </div>
             <div data-role="content">
-                <div data-role="navbar" data-iconpos="bottom">
+                <div id="top-bar" data-role="navbar" data-iconpos="bottom">
                     <ul>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="home">
+                            <a href="#home" data-transition="fade" data-theme="a" data-icon="home">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="#page2" data-transition="fade" data-theme="a" data-icon="info">
+                            <a href="#about" data-transition="fade" data-theme="a" data-icon="info">
                                 About Me
                             </a>
                         </li>
                         <li>
-                            <a href="#page3" data-transition="fade" data-theme="a" data-icon="alert">
+                            <a href="#contact" data-transition="fade" data-theme="a" data-icon="alert">
                                 Contact Me
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div data-role="navbar" data-iconpos="bottom">
+                <div id="bottom_bar" data-role="navbar" data-iconpos="bottom">
                     <ul>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                            <a href="#projects" data-transition="fade" data-theme="a" data-icon="star">
                                 Projects
                             </a>
                         </li>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                            <a href="#services" data-transition="fade" data-theme="a" data-icon="grid">
                                 Services
                             </a>
                         </li>
@@ -88,41 +88,51 @@
             </div>
 
         </div>
-        <div data-role="page" id="page2">
+        
+        
+        
+        <!-- ABOUT ME PAGE -->
+        
+        
+        
+        <div data-role="page" id="about">
             <div data-theme="a" data-role="header">
+            	<a data-roll="button" data-rel="back" data-theme="a">
+            		Back
+            	</a>
                 <h3>
                     About Me!
                 </h3>
             </div>
             <div data-role="content">
-                <div data-role="navbar" data-iconpos="left">
+                <div id="top-bar" data-role="navbar" data-iconpos="bottom">
                     <ul>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="home">
+                            <a href="#home" data-transition="fade" data-theme="a" data-icon="home">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="#page2" data-transition="fade" data-theme="a" data-icon="info">
+                            <a href="#about" data-transition="fade" data-theme="a" data-icon="info">
                                 About Me
                             </a>
                         </li>
                         <li>
-                            <a href="#page3" data-transition="fade" data-theme="a" data-icon="alert">
+                            <a href="#contact" data-transition="fade" data-theme="a" data-icon="alert">
                                 Contact Me
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div data-role="navbar" data-iconpos="left">
+                <div id="bottom_bar" data-role="navbar" data-iconpos="bottom">
                     <ul>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                            <a href="#projects" data-transition="fade" data-theme="a" data-icon="star">
                                 Projects
                             </a>
                         </li>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                            <a href="#services" data-transition="fade" data-theme="a" data-icon="grid">
                                 Services
                             </a>
                         </li>
@@ -147,52 +157,176 @@
                 </h3>
             </div>
         </div>
-        <div data-role="page" id="page3">
+        
+        
+        
+        
+          <!-- Contact ME PAGE -->
+          
+          
+          
+          
+          
+        <div data-role="page" id="contact">
             <div data-theme="a" data-role="header">
+            	<a data-roll="button" data-rel="back" data-theme="a">
+            		Back
+            	</a>
                 <h3>
                     Contact Me!
                 </h3>
             </div>
             <div data-role="content">
-                <div data-role="navbar" data-iconpos="left">
+               <div id="top-bar" data-role="navbar" data-iconpos="bottom">
                     <ul>
                         <li>
-                            <a href="#page1" data-role="button" data-transition="fade" data-theme="a" data-icon="home">
+                            <a href="#home" data-transition="fade" data-theme="a" data-icon="home">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="#page2" data-transition="fade" data-theme="a" data-icon="info">
+                            <a href="#about" data-transition="fade" data-theme="a" data-icon="info">
                                 About Me
                             </a>
                         </li>
                         <li>
-                            <a href="#page3" data-transition="fade" data-theme="a" data-icon="alert">
+                            <a href="#contact" data-transition="fade" data-theme="a" data-icon="alert">
                                 Contact Me
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div data-role="navbar" data-iconpos="left">
+                <div id="bottom_bar" data-role="navbar" data-iconpos="bottom">
                     <ul>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                            <a href="#projects" data-transition="fade" data-theme="a" data-icon="star">
                                 Projects
                             </a>
                         </li>
                         <li>
-                            <a href="#page1" data-transition="fade" data-theme="a" data-icon="">
+                            <a href="#services" data-transition="fade" data-theme="a" data-icon="grid">
                                 Services
                             </a>
                         </li>
                     </ul>
                 </div>
+               
             </div>
             <div data-theme="a" data-role="footer" data-position="fixed">
                 <h3>
                     &copy;2013 Ravash Inc. All rights reserved.
                 </h3>
             </div>
+        </div>
+        
+        
+          <!-- Projects-->
+          
+           <div data-role="page" id="projects">
+            <div data-theme="a" data-role="header">
+            	<a data-roll="button" data-rel="back" data-theme="a">
+            		Back
+            	</a>
+                <h3>
+                    My Projects!
+                </h3>
+            </div>
+            <div data-role="content">
+               <div id="top-bar" data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li>
+                            <a href="#home" data-transition="fade" data-theme="a" data-icon="home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" data-transition="fade" data-theme="a" data-icon="info">
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" data-transition="fade" data-theme="a" data-icon="alert">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="bottom_bar" data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li>
+                            <a href="#projects" data-transition="fade" data-theme="a" data-icon="star">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services" data-transition="fade" data-theme="a" data-icon="grid">
+                                Services
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    &copy;2013 Ravash Inc. All rights reserved.
+                </h3>
+            </div>
+        </div>
+        </div>
+        
+        
+        <!--   SERVICES PAGE -->
+        
+         <div data-role="page" id="services">
+            <div data-theme="a" data-role="header">
+            	<a data-roll="button" data-rel="back" data-theme="a">
+            		Back
+            	</a>
+                <h3>
+                    My Projects!
+                </h3>
+            </div>
+            <div data-role="content">
+               <div id="top-bar" data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li>
+                            <a href="#home" data-transition="fade" data-theme="a" data-icon="home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" data-transition="fade" data-theme="a" data-icon="info">
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" data-transition="fade" data-theme="a" data-icon="alert">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="bottom_bar" data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li>
+                            <a href="#projects" data-transition="fade" data-theme="a" data-icon="star">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services" data-transition="fade" data-theme="a" data-icon="grid">
+                                Services
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    &copy;2013 Ravash Inc. All rights reserved.
+                </h3>
+            </div>
+        </div>
         </div>
     </body>
 </html>
