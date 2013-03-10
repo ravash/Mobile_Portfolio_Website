@@ -1,6 +1,19 @@
 <!DOCTYPE html>
+
+<!--Name: Dylan Scott
+	Date: March 09, 2013
+	Student Number: 200167576
+	Website Name: mobile.html
+	Description: This is the page that mobile users that access my website get directed to. It is currently using jQuery mobile to hold
+	the 5 pages in.
+	
+	
+	
+	
+	 -->
 <html>
     <head>
+    	<!--Here is where I link my CDN's and CSS and JS files. -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -34,9 +47,13 @@
     </head>
     <body>
     	
-        <!-- Home Page!-->
+        <!-- Home Page!
+        	This page is the first page that mobile users will be directed to
+        	-->
         <div data-role="page" id="home">
+        	<!-- Here is the header bar that every page in the mobile version has -->
             <div data-theme="a" data-role="header">
+            	<!-- Here is the back button that every page in the mobile version has-->
             	<a data-roll="button" data-rel="back" data-theme="a">
             		Back
             	</a>
@@ -44,6 +61,7 @@
                     Ravash Inc!
                 </h3>
             </div>
+            <!-- The Top portion of my nav bar that every page in the mobile version has-->
             <div id="top-bar" data-role="navbar" data-iconpos="bottom">
                     <ul>
                         <li>
@@ -63,6 +81,7 @@
                         </li>
                     </ul>
                 </div>
+                 <!-- The Bottom portion of my nav bar that every page in the mobile version has-->
                 <div id="bottom_bar" data-role="navbar" data-iconpos="bottom">
                     <ul>
                         <li>
@@ -78,9 +97,12 @@
                     </ul>
                 </div>
             <div data-role="content">
-                
+                <div id="logopic">
+                <img src="img/logo(unedited).png" border=1px width="50%">
+                </div>
                 
             </div>
+            <!-- Here is my footer bar that every page in the mobile version has-->
             <div id="Copyright" data-theme="a" data-role="footer" data-position="fixed">
                 <h3>
                     &copy;2013 Ravash Inc. All rights reserved.
@@ -91,7 +113,8 @@
         
         
         
-        <!-- ABOUT ME PAGE -->
+        <!-- ABOUT ME PAGE 
+        	This page holds basic info about me as well as a picture and a sample of my resume-->
         
         
         
@@ -138,11 +161,12 @@
                     </ul>
                 </div>
             <div data-role="content">
-            	
+            	<!-- My picture for my about me page, on a browser it sits in the middle and takes up 50% of the screen-->
             	<div id="profilepic">
                 <img src="img/dylan_pic.jpg" border=1px width="50%">
                 </div>
-                
+                <!-- Here is the collapsible list set for my aobut me page. It holds some basic info about me as well as another
+                	collapsible list acting as my resume -->
                 <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
                     <div data-role="collapsible" data-collapsed="false" >
                         <h3>
@@ -160,6 +184,7 @@
                         <h3>
                             Resume
                         </h3>
+                        <!-- Lists within lists -->
                         <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
                     		<div data-role="collapsible" data-collapsed="true" >
                             <h3>Skills</h3>
@@ -209,7 +234,9 @@
         
         
         
-          <!-- Contact ME PAGE -->
+          <!-- Contact ME PAGE 
+          	This page is where users can find my email and phone number as well as links to many social media pages that
+          	they can follow me on. -->
           
           
           
@@ -259,16 +286,19 @@
                 </div>
             <div data-role="content">
             <p></p>
+            <!-- Here is the listview I use to hold my contact info -->
             <ul data-role="listview" data-divider-theme="b" data-inset="true">
                     <li data-role="list-divider" role="heading" id="contactinfo">
                         Contact Info:
                     </li>
                     <li data-theme="a">
+                    	<!-- This link will open up an email client that allows the user to send an email to the linked email address-->
                         <a href="mailto:Dylanscott@sympatico.ca" data-transition="slide">
                             Email To: Dylanscott@sympatico.ca
                         </a>
                     </li>
                     <li data-theme="a">
+                    	<!-- This link will cause mobile users to call the linked number -->
                         <a href="tel:2892310556" data-transition="slide">
                             Telephone: 289-231-0556
                         </a>
@@ -280,31 +310,32 @@
                     </li>
                 </ul>
                 <p></p>
-                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                <!-- This list view is holding all of my social media links-->
+                <ul data-role="listview" data-divider-theme="b" data-inset="true" data-theme="d">
                 <li>
                 <a href="http://www.facebook.com/Ravash">
-                <img src="img/fb_icon.png" alt"facebook">
+                <img src="img/fb_icon.png" alt="facebook">
                 <h3>Facebook</h3>
                 <p>Follow Me</p>
                 </a>                
                 </li>
                 <li>
                 <a href="http://twitter.com/dylanscott3">
-                <img src="img/twitter_logo.png">
+                <img src="img/twitter_logo.png" alt="twitter">
                 <h3>Twitter</h3>
                 <p>Follow Me</p>
                 </a>
                 </li>
                 <li>
                 <a href="http://www.linkedin.com/profile/view?id=129797417/">
-                <img src="img/linkedin_logo.png">
+                <img src="img/linkedin_logo.png" alt="linkedin">
                 <h3>LinkedIn</h3>
                 <p>Follow Me</p>
                 </a>
                 </li>
                 <li>
                 <a href="http://www.youtube.com/user/dylanscott3">
-                <img src="img/youtube_logo.png">
+                <img src="img/youtube_logo.png" alt="youtube">
                 <h3>Youtube</h3>
                 <p>Subscribe to my channel</p>
                 </a>
@@ -321,7 +352,8 @@
         </div>
         
         
-          <!-- Projects-->
+          <!-- Projects
+          	This page holds a list of my current and past projects that users can click on to view the code on github-->
           
            <div data-role="page" id="projects">
             <div data-theme="a" data-role="header">
@@ -366,11 +398,47 @@
                     </ul>
                 </div>
             <div data-role="content">
+            <p></p>
+            <!-- List view holding images and links for my projects -->
+                <ul data-role="listview" data-divider-theme="b" data-inset="true" data-theme="a">
+                <li data-role="list-divider" role="heading" id="contactinfo">
+                        Past Projects:
+                  </li>
+                  <li>
+                <a href="https://github.com/ravash/Flash_ball_animation">
+                <img src='img/ballthumb.png'>
+                <h3>Ball Animation</h3>
+                <p>Created in Flash</p>
+                </a>
+                </li>
+                <li>
+                <a href="https://github.com/ravash/Boaters_Paradise">
+                <img src="img/boater_thumb.png" alt"boatersparadise">
+                <h3>Boaters Paradise</h3>
+                <p>Created in Visual Basic</p>
+                </a>                
+                </li>
+                <li>
+                <a href="https://github.com/ravash/Slot_Machine">
+                <img src="img/slotthumb.png" alt="slotmachine">
+                <h3>Slot Machine</h3>
+                <p>Created in Visual Basic</p>
+                </a>
+                </li>
+                <li>
+                <a href="https://github.com/ravash/Space_Master">
+                <img src="img/spacethumb.png" alt="spacemaster">
+                <h3>Space Master</h3>
+                <p>Created in Visual Basic</p>
+                </a>
+                </li>
+                
+                </ul>          
                
                
                
-               
-            </div>    
+            </div>
+            
             <div data-theme="a" data-role="footer" data-position="fixed">
                 <h3>
                     &copy;2013 Ravash Inc. All rights reserved.
@@ -380,7 +448,8 @@
         </div>
         
         
-        <!--   SERVICES PAGE -->
+        <!--   SERVICES PAGE 
+        	This page shows users some of the services I can provide in specific computer science fields-->
         
          <div data-role="page" id="services">
             <div data-theme="a" data-role="header">
@@ -425,8 +494,28 @@
                     </ul>
                 </div>
             <div data-role="content">
-               
-            </div>    
+            	<p id="servicetitle">What can I offer?</p>
+            	<!-- Collapsible set I used to hold my knowledge -->
+            	<div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+                    <div data-role="collapsible" data-collapsed="false" >
+                        <h3>
+                            Web Development:
+                        </h3>
+                        <p>Lots of experience coding and designing websites using languages such as Html, Css, Php, JavaScript, Ruby on Rails, jQuery and jQuery Mobile.</p>
+                    </div>
+                    <div data-role="collapsible">
+                    <h3>Programming Language</h3>
+                    <p>Over the past few years I have used quite a few different programming languages however my best work comes out of programming in Java, Python or Visual Basic.</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>
+                            Animation and Design:
+                        </h3>
+                        <p>Just in the past year I have been diving more into Animation and Graphic Design using programs such as Adobe Flash, Adobe Illustrator, and Adobe Photoshop.</p>
+                    	</div>
+                    </div>
+                </div> 
+            
             <div data-theme="a" data-role="footer" data-position="fixed">
                 <h3>
                     &copy;2013 Ravash Inc. All rights reserved.
